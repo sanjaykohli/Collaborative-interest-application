@@ -1,0 +1,81 @@
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222)); /* Pastel gradient background */
+}
+
+.login-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #e0e0e0); /* Pastel gradient background */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjusted width */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input,
+.login-form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.or-text {
+    text-align: center;
+    margin: 15px 0;
+    color: #888;
+}
+
+.social-buttons {
+    text-align: center;
+    margin-bottom: 15px; /* Added margin bottom */
+}
+
+.google-btn,
+.facebook-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+    font-family: 'Arial', sans-serif; /* Cool font */
+}
+
+.google-btn {
+    background: linear-gradient(135deg, #84fab0, #8fd3f4); /* Pastel gradient background */
+}
+
+.facebook-btn {
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb); /* Pastel gradient background */
+    margin-left: 10px; /* Added margin between buttons */
+    margin-top:10px;
+}
+.forgot-password {
+    text-align: center; /* Center the "Forgot Password" link */
+}
+
+.forgot-password a {
+    color: #555; /* Grey color for forgot password link */
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+h2 {
+    text-align: center;
+    color: #654321 ; /* Beige color for headings */
+    font-family: 'Roboto', sans-serif; /* Cool font */
+}
+.vt{
+    text-align: center;
+    color:#bc8f8f;
+}
