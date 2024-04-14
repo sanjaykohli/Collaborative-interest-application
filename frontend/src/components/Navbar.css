@@ -1,0 +1,75 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: ; /* Peach color */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  position: relative;
+  padding: 10px;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: #4d3126; /* Dark brown */
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #fff3e6; /* Light peach */
+  transition: background-color 0.3s;
+}
+
+.navbar-item a:hover {
+  background-color: #ffd9b3; /* Darker peach */
+}
+
+/* Left side */
+.clubs-nav,
+.events-nav {
+  margin-right: 20px;
+}
+
+/* Right side */
+.profile-nav {
+  margin-left: auto;
+}
+
+/* Vertical dropdown */
+.vertical-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff3e6; /* Light peach */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  min-width: 200px;
+  border-radius: 4px;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 5px 10px;
+  color: #4d3126; /* Dark brown */
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ffd9b3; /* Darker peach */
+}
