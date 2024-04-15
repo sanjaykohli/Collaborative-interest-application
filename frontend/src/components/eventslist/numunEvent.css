@@ -1,0 +1,87 @@
+.numun-event-container {
+    padding: 20px;
+  }
+  
+  .numun-event-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .numun-event-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .numun-event-description {
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .numun-event-description h2 {
+    color: #ffd700; /* Golden color for the title */
+  }
+  
+  .numun-event-description p {
+    margin-bottom: 20px;
+  }
+  
+  .numun-event-description p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .numun-event-form {
+    background-color: #000; /* Black background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .numun-event-form h2 {
+    margin-bottom: 20px;
+    color: #ffd700; /* Golden color for the title */
+  }
+  
+  .numun-event-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .numun-event-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffd700; /* Golden color for labels */
+  }
+  
+  .numun-event-form input[type='text'],
+  .numun-event-form input[type='email'],
+  .numun-event-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffd700; /* Golden color for borders */
+    border-radius: 5px;
+    color: #fff; /* White color for text */
+  }
+  
+  .numun-event-form textarea {
+    height: 100px;
+  }
+  
+  .numun-event-form button[type='submit'] {
+    background-color: #ffd700; /* Golden color for the button */
+    color: #000; /* Black color for text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .numun-event-form button[type='submit']:hover {
+    background-color: #c0a000; /* Darker golden color on hover */
+  }
+  

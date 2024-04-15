@@ -1,0 +1,84 @@
+.ingenuity-event-container {
+    padding: 20px;
+  }
+  
+  .ingenuity-event-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .ingenuity-event-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ingenuity-event-description {
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .ingenuity-event-description h2 {
+    color: #007bff;
+  }
+  
+  .ingenuity-event-description p {
+    margin-bottom: 20px;
+  }
+  
+  .ingenuity-event-description p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .ingenuity-event-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .ingenuity-event-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .ingenuity-event-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .ingenuity-event-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .ingenuity-event-form input[type='text'],
+  .ingenuity-event-form input[type='email'],
+  .ingenuity-event-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .ingenuity-event-form textarea {
+    height: 100px;
+  }
+  
+  .ingenuity-event-form button[type='submit'] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ingenuity-event-form button[type='submit']:hover {
+    background-color: #0056b3;
+  }
+  
