@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './clubForm.css';
 
-function ClubForm() {
+function EventForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,23 +17,11 @@ function ClubForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form data:', formData);
-
     try {
-      await axios.post('http://localhost:4000/club', {formData});
-      console.log('Form submitted successfully');
-
-      // Clear the form
-      setFormData({
-        name: '',
-        email: '',
-        enrollmentNumber: '',
-        phoneNumber: '',
-        previousExperience: '',
-        videoUrl: '',
-      });
+      await axios.post('/event', formData);
+      // Redirect or show success message
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error(error);
     }
   };
 
@@ -109,4 +96,4 @@ function ClubForm() {
   );
 }
 
-export default ClubForm;
+export default EventForm;
