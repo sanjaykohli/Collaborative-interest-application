@@ -9,8 +9,6 @@ const clubRouter = require('./routes/clubRoutes')
 const eventRouter = require('./routes/eventRoutes')
 
 
-
-
 // express
 const app = express();
 
