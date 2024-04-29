@@ -1,34 +1,50 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import './Home.css';
+import Footer from './footer';
+
+const backgroundImages = [
+  'bg-image1',
+  'bg-image2',
+  'bg-image3',
+  'bg-image4',
+  'bg-image5',
+  'bg-image6',
+  'bg-image7',
+  'bg-image8',
+  'bg-image9',
+  'bg-image10',
+  'bg-image11',
+  'bg-image12'
+];
 
 function Home() {
-  return (
-    
-    <div className="home-container">
-            <Navbar  className="navvv"/>
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-      <h1 className="home-title">Welcome to the VibeTribe</h1>
-      <div className="section-container">
-        <h2 className="section-title">Explore Our Clubs</h2>
-        <p className="section-description">
-          Discover a wide range of clubs and communities to get involved in.
-        </p>
-        <a href="/clubs" className="section-link">
-          View Clubs
-        </a>
-      </div>
-      <div className="section-container">
-        <h2 className="section-title">Upcoming Events</h2>
-        <p className="section-description">
-          Check out our upcoming events and join the fun.
-        </p>
-        <a href="/events" className="section-link">
-          View Events
-        </a>
-      </div>
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000); // Change image every 4 seconds
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="home-container">
+      {backgroundImages.map((image, index) => (
+        <div
+          key={index}
+          className={`background-image ${image} ${index === currentImageIndex ? 'active' : ''}`}
+        />
+      ))}
+      <Navbar className="navvv" />
+      <Footer />
+
     </div>
   );
 }
 
 export default Home;
+
+

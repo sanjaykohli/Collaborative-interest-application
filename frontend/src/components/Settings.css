@@ -1,0 +1,79 @@
+.settings-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .settings-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4d3126; /* Dark brown */
+  }
+  
+  .settings-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  
+  .settings-form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .settings-form-label {
+    font-weight: bold;
+    color: #4d3126; /* Dark brown */
+  }
+  
+  .settings-form-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .settings-form-button {
+    background-color: #ffd9b3; /* Light peach */
+    color: #4d3126; /* Dark brown */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .settings-form-button:hover {
+    background-color: #ffbf80; /* Darker peach */
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode .settings-container {
+    background-color: #1a1a1a; /* Dark background color */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark-mode .settings-title,
+  .dark-mode .settings-form-label {
+    color: #ccc; /* Light text color */
+  }
+  
+  .dark-mode .settings-form-input {
+    background-color: #242424; /* Dark input background */
+    border-color: #333;
+    color: #ccc; /* Light text color */
+  }
+  
+  .dark-mode .settings-form-button {
+    background-color: #4d3126; /* Dark brown */
+    color: #fff; /* White text */
+  }
+  
+  .dark-mode .settings-form-button:hover {
+    background-color: #663d33; /* Darker brown */
+  }

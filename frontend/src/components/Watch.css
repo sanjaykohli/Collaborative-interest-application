@@ -1,0 +1,39 @@
+/* Watch.css */
+.watch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 60px;
+  background: linear-gradient(135deg, pink, #c54bbc, #ffd8f0, #e0218a, #ffb3de, #ff00ff);
+}
+
+.watch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.watch-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.watch-item iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* YouTube video styles */
+.watch-item iframe.youtube-video {
+  aspect-ratio: 16 / 9; /* 16:9 aspect ratio */
+  max-width: 800px; /* Increase the maximum width */
+}
+
+/* Instagram reel styles */
+.watch-item iframe.instagram-reel {
+  aspect-ratio: 9 / 16; /* Portrait aspect ratio like a phone */
+  max-height: 800px; /* Increase the maximum height */
+}

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import './Profile.css';
 
 function Profile() {
   // Fetch user data from an API or state
@@ -10,8 +12,8 @@ function Profile() {
   };
 
   return (
-    <div>
-      <h2>Profile</h2>
+    <div className="profile-container">
+      <Navbar />
       <div className="profile-info">
         <h3>{user.name}</h3>
         <p>Email: {user.email}</p>
