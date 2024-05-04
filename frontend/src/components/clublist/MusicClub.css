@@ -1,0 +1,64 @@
+.music-club-container {
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+
+}
+
+.music-club-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.music-club-image img {
+  width: 100%;
+  max-width: 500px;
+  height: 240px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.music-club-description {
+  max-width: 800px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.music-club-description h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: beige;
+}
+
+.music-club-description p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: beige;
+  margin-bottom: 20px;
+}
+
+.join-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #0056b3;
+}
+
+.music-club-form {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  width: 1000px;
+  margin-top: 30px;
+}
