@@ -1,84 +1,64 @@
 .ingenuity-event-container {
-    padding: 20px;
-  }
-  
-  .ingenuity-event-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .ingenuity-event-image img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .ingenuity-event-description {
-    max-width: 600px;
-    text-align: center;
-  }
-  
-  .ingenuity-event-description h2 {
-    color: #007bff;
-  }
-  
-  .ingenuity-event-description p {
-    margin-bottom: 20px;
-  }
-  
-  .ingenuity-event-description p:last-child {
-    margin-bottom: 0;
-  }
-  
-  .ingenuity-event-form {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .ingenuity-event-form h2 {
-    margin-bottom: 20px;
-  }
-  
-  .ingenuity-event-form .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .ingenuity-event-form label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .ingenuity-event-form input[type='text'],
-  .ingenuity-event-form input[type='email'],
-  .ingenuity-event-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .ingenuity-event-form textarea {
-    height: 100px;
-  }
-  
-  .ingenuity-event-form button[type='submit'] {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .ingenuity-event-form button[type='submit']:hover {
-    background-color: #0056b3;
-  }
-  
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+
+}
+
+.ingenuity-event-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.ingenuity-event-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ingenuity-event-description {
+  max-width: 800px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.ingenuity-event-description h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.ingenuity-event-description p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.join-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #0056b3;
+}
+
+.ingenuity-event-form {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  width: 1000px;
+  margin-top: 30px;
+}

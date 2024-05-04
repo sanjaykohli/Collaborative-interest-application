@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../Navbar';
 import './tedxEvent.css';
-import tedimg from './imagess/tedx.jpeg'
+import tedimg from './imagess/tedx.jpeg';
+
+
 
 function TEDxEvent() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
+  const [showForm, setShowForm] = useState(false);
+
+  const toggleForm = () => {
+    setShowForm(!showForm);
   };
 
   return (
@@ -24,28 +27,15 @@ function TEDxEvent() {
           <p>
             Join us for a day of inspiration, innovation, and ideas worth spreading. Whether you're a student, professional, or lifelong learner, there's something for everyone at TEDx. Get ready to be inspired and make meaningful connections with fellow attendees.
           </p>
-          <p>
-            Let's explore the power of ideas together!
-          </p>
+          <p>Let's explore the power of ideas together!</p>
+          <button className="join-button" onClick={toggleForm}>
+            {showForm ? 'Close Form' : 'Register Now'}
+          </button>
         </div>
-      </div>
-      <div className="tedx-event-form">
-        <h2>Register for TEDx Event</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+        {showForm && (
+          <div className="tedx-event-form">
           </div>
-          <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
+        )}
       </div>
     </div>
   );
