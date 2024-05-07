@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 
-
-
-const clubFormSchema = new mongoose.Schema({
+const eventFormSchema = new mongoose.Schema({
 
   name: {
     type: String,
@@ -33,6 +31,4 @@ const clubFormSchema = new mongoose.Schema({
 );
 
 
-
-
-module.exports = mongoose.model('clubForm', clubFormSchema);
+module.exports = mongoose.model('eventForm', eventFormSchema);
