@@ -29,13 +29,13 @@
 .ingenuity-event-description h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #333;
+  color: beige;
 }
 
 .ingenuity-event-description p {
   font-size: 18px;
   line-height: 1.6;
-  color: #555;
+  color: beige;
   margin-bottom: 20px;
 }
 
@@ -61,4 +61,5 @@
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   width: 1000px;
   margin-top: 30px;
+  text-align: center;
 }

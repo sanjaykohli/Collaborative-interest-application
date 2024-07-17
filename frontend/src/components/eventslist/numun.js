@@ -32,6 +32,7 @@ function NUMUNEvent() {
         </div>
         {showForm && (
           <div className="numun-event-form">
+            Forms will open during the time of the event
           </div>
         )}
       </div>

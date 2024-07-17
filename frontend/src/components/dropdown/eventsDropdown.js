@@ -5,10 +5,13 @@ function EventsDropdown() {
   return (
     <div className="dropdown-menu">
       <ul>
-        <li><Link to="/events/music-concert">Music Concert</Link></li>
-        <li><Link to="/events/dance-competition">Dance Competition</Link></li>
-        <li><Link to="/events/seminar">Seminar</Link></li>
-        <li><Link to="/events/workshop">Workshop</Link></li>
+        <li><Link to="/events/ingenuity">IngeNUity</Link></li>
+        <li><Link to="/events/tedxniituniversity">TEDxNIITUNIVERSITY</Link></li>
+        <li><Link to="/events/numun">NUMUN</Link></li>
+        <li><Link to="/events/sinusoid">Sinusoid</Link></li>
+        <li><Link to="/events/hultprize">HultPrize</Link></li>
+        <li><Link to="/events/houseelections">HouseElections</Link></li>
+        <li><Link to="/events/audacity">Audacity</Link></li>
       </ul>
     </div>
   );

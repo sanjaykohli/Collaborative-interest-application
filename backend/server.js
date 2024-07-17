@@ -2,7 +2,6 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const express = require('express');
 const mongoose = require('mongoose');
-const path = require('path');
 
 // Load environment variables
 dotenv.config();
@@ -10,26 +9,18 @@ dotenv.config();
 // Express app
 const app = express();
 app.use(express.json());
-
-// CORS setup
-const allowedOrigins = ['http://localhost:3000'];
-app.use(cors({ origin: allowedOrigins }));
-
-// Middleware
-app.use((req, res, next) => {
-  console.log(`${req.method} request to ${req.path}`);
-  next();
-});
+app.use(cors());
 
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URL)
   .then(() => {
     console.log("Connected to MongoDB");
 
     const userSchema = new mongoose.Schema({
-      name: { type: String, required: true },
-      email: { type: String, required: true }
-    });
+  name: { type: String },
+  email: { type: String }
+  // Add any other relevant user information
+});
 
     // Create User model
     const User = mongoose.model('oauthuser', userSchema);
@@ -48,17 +39,28 @@ mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopol
 
     // Google authentication redirect route
     app.get('/auth/google/redirect', async (req, res) => {
+      // Assuming you're using a query parameter to pass user data from Google
       const { name, email } = req.query;
 
       try {
+        // Create a new user document with the name and email
         const user = new User({ name, email });
         await user.save();
         console.log('New user saved:', user);
+
+        // Redirect user to home page or any other page
         res.redirect('http://localhost:3000/home');
       } catch (error) {
         console.error('Error saving user data:', error);
+        // Handle error appropriately
         res.status(500).send('Error saving user data');
       }
+    });
+
+    // Middleware
+    app.use((req, res, next) => {
+      console.log(req.path, req.method);
+      next();
     });
 
     // Routes
@@ -68,15 +70,11 @@ mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopol
     app.use('/calendar', require('./routes/calendarRoutes'));
     app.use('/notification', require('./routes/notificationRoutes'));
 
-    // Serve static files from the React app build directory
-    app.use(express.static(path.join(__dirname, '../frontend/build')));
+    // CORS setup
+    const allowedOrigins = ['http://localhost:3000'];
+    app.use(cors({ origin: allowedOrigins }));
 
-    // Handle any other routes with the React app
-    app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'));
-    });
-
-    // Start the server
+    // Listen
     app.listen(process.env.PORT, () => {
       console.log(`Server is running on port ${process.env.PORT}`);
     });

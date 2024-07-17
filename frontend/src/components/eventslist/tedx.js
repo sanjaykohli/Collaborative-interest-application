@@ -34,6 +34,7 @@ function TEDxEvent() {
         </div>
         {showForm && (
           <div className="tedx-event-form">
+            Forms will open during the time of the event
           </div>
         )}
       </div>

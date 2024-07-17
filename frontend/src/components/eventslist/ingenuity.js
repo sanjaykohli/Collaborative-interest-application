@@ -33,8 +33,8 @@ function IngenuityEvent() {
         </div>
         {showForm && (
           <div className="ingenuity-event-form">
-            <h2>Register for Ingenuity Cultural Fest</h2>
-            <EventForm />
+            Forms will open during the time of the event
+          
           </div>
         )}
       </div>

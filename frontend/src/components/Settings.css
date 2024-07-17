@@ -5,6 +5,7 @@
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
   }
   
   .settings-title {
@@ -52,28 +53,3 @@
     background-color: #ffbf80; /* Darker peach */
   }
   
-  /* Dark Mode Styles */
-  .dark-mode .settings-container {
-    background-color: #1a1a1a; /* Dark background color */
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
-  }
-  
-  .dark-mode .settings-title,
-  .dark-mode .settings-form-label {
-    color: #ccc; /* Light text color */
-  }
-  
-  .dark-mode .settings-form-input {
-    background-color: #242424; /* Dark input background */
-    border-color: #333;
-    color: #ccc; /* Light text color */
-  }
-  
-  .dark-mode .settings-form-button {
-    background-color: #4d3126; /* Dark brown */
-    color: #fff; /* White text */
-  }
-  
-  .dark-mode .settings-form-button:hover {
-    background-color: #663d33; /* Darker brown */
-  }

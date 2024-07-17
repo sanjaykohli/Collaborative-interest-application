@@ -32,7 +32,8 @@ function AudacityEvent() {
         </div>
         {showForm && (
           <div className="audacity-event-form">
-   
+           Forms will open during the time of the event
+
           </div>
         )}
       </div>

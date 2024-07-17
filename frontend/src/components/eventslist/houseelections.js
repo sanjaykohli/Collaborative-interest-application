@@ -32,6 +32,7 @@ function HouseElectionsEvent() {
         </div>
         {showForm && (
           <div className="house-elections-event-form">
+            Forms will open during the time of the event
           </div>
         )}
       </div>

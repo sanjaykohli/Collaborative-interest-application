@@ -1,58 +1,54 @@
-/* Profile.css */
 .profile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    margin-left: 200px; 
-  }
-  
-  .profile-info {
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    text-align: center;
-    max-width: 500px;
-    width: 100%;
-  }
-  
-  .profile-info h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .profile-info p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .profile-info h4 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .profile-info ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .profile-info li {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .profile-info a {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-    margin-top: 1.5rem;
-  }
-  
-  .profile-info a:hover {
-    background-color: #0056b3;
-  }
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+.profile-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4d3126; /* Dark brown */
+}
+
+.profile-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+
+
+.profile-form-label {
+  font-weight: bold;
+  color: #4d3126; /* Dark brown */
+}
+
+.profile-form-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.profile-form-button {
+  background-color: #ffd9b3; /* Light peach */
+  color: #4d3126; /* Dark brown */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none; /* Added */
+  display: inline-block; /* Added */
+  text-align: center; /* Added */
+}
+
+.profile-form-button:hover {
+  background-color: #ffbf80; /* Darker peach */
+}

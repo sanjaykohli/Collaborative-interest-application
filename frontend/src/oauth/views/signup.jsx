@@ -56,7 +56,7 @@ const Label = styled.label`
 const Input = styled.input`
   padding: 10px;
   margin-bottom: 10px;
-  border: 2px solid ${({ error }) => (error ? 'red' : '#e06666')};
+  border: 2px solid ${({ error }) => (error ? 'red' : '#f70776')};
   border-radius: 5px;
   transition: border-color 0.3s ease;
 
@@ -68,7 +68,7 @@ const Input = styled.input`
 
 const Button = styled.button`
   padding: 10px;
-  background-color: #e06666;
+  background-color: #f70776;
   color: #fff;
   border: none;
   border-radius: 5px;
