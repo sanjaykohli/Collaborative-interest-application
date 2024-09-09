@@ -2,6 +2,7 @@
 
 const User = require('../models/userModel');
 
+
 // Function to get all users
 const getAllUsers = async (req, res) => {
     try {
